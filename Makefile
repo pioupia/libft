@@ -1,5 +1,5 @@
 NAME = libft.a
-SRC_DIR = .
+SRC_DIR = ./srcs
 SRC_FILES = $(SRC_DIR)/ft_atoi.c \
 			$(SRC_DIR)/ft_isalpha.c \
 			$(SRC_DIR)/ft_memchr.c \
