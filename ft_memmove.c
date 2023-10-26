@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-void	*ft_memmove_left(void *dest, const void *src, size_t n)
+static void	*ft_memmove_left(void *dest, const void *src, size_t n)
 {
 	char	*from;
 	char	*to;
@@ -28,26 +28,10 @@ void	*ft_memmove_left(void *dest, const void *src, size_t n)
 	return (to);
 }
 
-void	*ft_memmove_right(void *dest, const void *src, size_t n)
-{
-	char	*from;
-	char	*to;
-
-	from = (char *) src;
-	to = (char *) dest;
-	if (n > 0)
-	{
-		while (--n > 0)
-			to[n] = from[n];
-		to[0] = from[0];
-	}
-	return (to);
-}
-
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (src < dest)
-		return (ft_memmove_right(dest, src, n));
+		return (ft_memcpy(dest, src, n));
 	else if (src > dest)
 		return (ft_memmove_left(dest, src, n));
 	else

@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 #include <stdlib.h>
 
-int	ft_find_occurence(const char *s, char c, int from)
+static int	ft_find_occurence(const char *s, char c, int from)
 {
 	while (s[from] && s[from] != c)
 		from++;
 	return (from);
 }
 
-int	ft_count_occurence(const char *s, char c)
+static int	ft_count_occurence(const char *s, char c)
 {
 	int	i;
 	int	temp_len;
@@ -42,7 +42,7 @@ int	ft_count_occurence(const char *s, char c)
 	return (count);
 }
 
-char	*ft_copy_buffer(const char *s, int len)
+static char	*ft_copy_buffer(const char *s, int len)
 {
 	int		i;
 	char	*res;
@@ -60,7 +60,7 @@ char	*ft_copy_buffer(const char *s, int len)
 	return (res);
 }
 
-int	ft_fill_tab(const char *s, char c, char **res, int count)
+static int	ft_fill_tab(const char *s, char c, char **res, int count)
 {
 	int	i;
 	int	len;
@@ -89,6 +89,8 @@ char	**ft_split(const char *s, char c)
 	int		status;
 	char	**res;
 
+    if (!s)
+        return (NULL);
 	count = ft_count_occurence(s, c);
 	res = NULL;
 	res = malloc((count + 1) * sizeof(char *));

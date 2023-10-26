@@ -13,13 +13,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str;
-
-	str = (char *) s;
-	if (n > 0)
-	{
-		str[0] = '\0';
-		while (--n > 0)
-			str[n] = '\0';
-	}
+	ft_memset(s, 0, n);
 }

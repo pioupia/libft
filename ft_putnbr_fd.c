@@ -12,7 +12,7 @@
 #include <unistd.h>
 #include "libft.h"
 
-void	ft_fill_nbrchar(char *res, int n, int size)
+static void	ft_fill_char(char *res, int n, int size)
 {
 	int	i;
 
@@ -52,6 +52,6 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n == 0 || n < 0)
 		size++;
-	ft_fill_nbrchar(res, n, size);
+	ft_fill_char(res, n, size);
 	write(fd, res, ft_strlen(res));
 }

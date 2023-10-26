@@ -11,11 +11,9 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int	is_whitespace(const char c)
+static int	is_whitespace(const char c)
 {
-	return (c == '\f' || c == '\n'
-		|| c == '\r' || c == '\t'
-		|| c == '\v' || c == ' ');
+	return ((c >= 9 && c <= 13) || c == ' ');
 }
 
 int	ft_atoi(const char *nptr)

@@ -12,7 +12,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-t_list	*ft_lstset_node(t_list *lst, t_list **el,
+static t_list	*ft_lstset_node(t_list *lst, t_list **el,
 		void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*iter_temp;

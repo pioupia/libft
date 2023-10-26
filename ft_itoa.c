@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include <stdlib.h>
 
-void	ft_fill_char(char *res, int n, int size)
+static void	ft_fill_char(char *res, int n, int size)
 {
 	int	i;
 

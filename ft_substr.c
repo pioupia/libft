@@ -12,7 +12,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_substr_err(void)
+static char	*ft_substr_err(void)
 {
 	char	*s;
 
@@ -30,6 +30,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*substr;
 
 	i = 0;
+    if (!s)
+        return (ft_substr_err());
 	size = ft_strlen(s);
 	if (start >= size)
 		return (ft_substr_err());

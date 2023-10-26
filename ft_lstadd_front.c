@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_lstremove_link(t_list *first, t_list *new)
+static void	ft_lstremove_link(t_list *first, t_list *new)
 {
 	while (first)
 	{

@@ -12,7 +12,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-int	is_in_set(const char c, const char *set)
+static int	is_in_set(const char c, const char *set)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ int	is_in_set(const char c, const char *set)
 	return (0);
 }
 
-int	count_trim_char(char const *s1, char const *set, size_t len)
+static int	count_trim_char(char const *s1, char const *set, size_t len)
 {
 	size_t	i;
 	int		count;
@@ -47,7 +47,7 @@ int	count_trim_char(char const *s1, char const *set, size_t len)
 	return (count);
 }
 
-void	set_in_str(char *res, const char *s1, const char *set, size_t len)
+static void	set_in_str(char *res, const char *s1, const char *set, size_t len)
 {
 	size_t	i;
 	int		shift;
@@ -71,10 +71,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	len;
 	char	*res;
 
-	if (s1 == NULL)
-		len = 0;
-	else
-		len = ft_strlen(s1);
+    len = 0;
+	if (s1 != NULL)
+        len = ft_strlen(s1);
 	count = count_trim_char(s1, set, len);
 	res = ft_calloc((len - count + 1), sizeof(char));
 	if (res == NULL)
