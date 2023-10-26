@@ -1,3 +1,5 @@
 .ignore/
 .vscode/
 .idea/
+srcs/*.o
+libft.a
