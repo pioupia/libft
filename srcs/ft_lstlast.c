@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pioupia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 15:51:45 by pioupia           #+#    #+#             */
-/*   Updated: 2023/10/20 15:54:15 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/06/07 06:51:08 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../includes/libft.h"
 
 t_list	*ft_lstlast(t_list *lst)

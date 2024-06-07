@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pioupia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 09:16:35 by pioupia           #+#    #+#             */
-/*   Updated: 2023/10/21 15:25:15 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/06/07 06:59:36 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
 static int	ft_find_occurence(const char *s, char c, int from)

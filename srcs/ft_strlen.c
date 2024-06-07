@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pioupia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:43:53 by pioupia           #+#    #+#             */
-/*   Updated: 2023/10/17 17:51:46 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/06/07 07:03:17 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../includes/libft.h"
 
 size_t	ft_strlen(const char *str)

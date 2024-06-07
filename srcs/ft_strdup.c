@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pioupia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:44:01 by pioupia           #+#    #+#             */
-/*   Updated: 2023/10/18 14:03:17 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/06/07 07:01:09 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include "../includes/libft.h"
 

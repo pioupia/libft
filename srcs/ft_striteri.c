@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pioupia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:21:20 by pioupia           #+#    #+#             */
-/*   Updated: 2023/10/20 11:12:38 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/06/07 07:02:07 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;

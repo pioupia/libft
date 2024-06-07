@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pioupia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:31:01 by pioupia           #+#    #+#             */
-/*   Updated: 2023/10/18 15:18:33 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/06/07 06:36:00 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../includes/libft.h"
 
 static int	is_whitespace(const char c)
 {
-	return ((c >= 9 && c <= 13) || c == ' ');
+	return ((c >= '\t' && c <= '\r') || c == ' ');
 }
 
 int	ft_atoi(const char *nptr)
