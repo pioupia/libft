@@ -6,7 +6,7 @@
 /*   By: pioupia <pioupia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:58:37 by pioupia           #+#    #+#             */
-/*   Updated: 2024/07/16 11:14:47 by pioupia          ###   ########.fr       */
+/*   Updated: 2024/07/24 11:31:16 by pioupia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	divided = new_size / nmemb;
 	if ((size_t) divided != size)
 		return (NULL);
-	el = malloc(size);
+	el = malloc(new_size);
 	if (el == NULL)
 		return (NULL);
-	ft_bzero(el, size);
+	ft_bzero(el, new_size);
 	return ((void *) el);
 }
